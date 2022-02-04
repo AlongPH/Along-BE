@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 
 public interface MemberService {
     MemberVO createMember(MemberVO memberVO);
+
+    MemberVO loginMember(MemberVO memberVO);
 }
 
 

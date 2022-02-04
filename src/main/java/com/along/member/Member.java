@@ -1,9 +1,11 @@
 package com.along.member;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 import javax.persistence.*;
 
+@Getter
 @Entity
 public class Member {
     @GeneratedValue(strategy = GenerationType.AUTO)

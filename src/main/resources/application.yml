@@ -1,12 +1,15 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/along?serverTimezone=UTC&characterEncoding=UTF-8
-    username: root
-    password: root
+    url: jdbc:mysql://along-db.cria4byvgcl8.ap-northeast-2.rds.amazonaws.com:3306/along?serverTimezone=UTC&characterEncoding=UTF-8
+    username: admin
+    password: along12#
 
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
+
+server:
+  port: 3000

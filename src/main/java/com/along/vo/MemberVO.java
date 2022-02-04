@@ -1,5 +1,6 @@
 package com.along.vo;
 
+import com.along.member.Member;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -29,5 +30,14 @@ public class MemberVO {
         this.phone = phone;
         this.email = email;
         this.regDate = LocalDateTime.now().toString();
+    }
+
+    public MemberVO(Member member){
+        this.userId = member.getUserId();
+        this.userPw = member.getUserPw();
+        this.userNm = member.getUserNm();
+        this.phone = member.getPhone();
+        this.email = member.getEmail();
+        this.regDate = member.getRegDate();
     }
 }
