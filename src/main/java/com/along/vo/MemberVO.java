@@ -13,15 +13,16 @@ import java.time.LocalDateTime;
 public class MemberVO {
     @NotEmpty @Size(min=1,max=20)
     private String userId;
-    @NotEmpty @Size(min=1,max=20)
+    //@NotEmpty @Size(min=1,max=20)
     private String userPw;
-    @NotEmpty @Size(min=1,max=20)
+    //@NotEmpty @Size(min=1,max=20)
     private String userNm;
-    @NotNull @Pattern(regexp="^01(?:0|1|[6-9])[.-]?(\\d{3}|\\d{4})[.-]?(\\d{4})$")
+    //@NotNull @Pattern(regexp="^01(?:0|1|[6-9])[.-]?(\\d{3}|\\d{4})[.-]?(\\d{4})$")
     private String phone;
-    @NotNull @Email
+    //@NotNull @Email
     private String email;
     private String regDate;
+    private String accessToken;
 
     public MemberVO(String userId, String userPw, String userNm, String phone, String email) {
         this.userId = userId;
